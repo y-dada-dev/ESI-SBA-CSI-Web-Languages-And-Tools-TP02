@@ -1,0 +1,60 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT bibtex-file (article|inproceedings|book|phdthesis)+>
+<!ENTITY % C "(author,title)" >
+<!ELEMENT article (%C;,journal,year,volume,number,pages,
+                   month,note)>
+<!ATTLIST article key ID #REQUIRED >
+
+<!ELEMENT inproceedings (%C;,booktitle,year,address,month)>
+<!ATTLIST inproceedings key ID #REQUIRED >
+
+<!ELEMENT book (%C;,publisher,year)>
+<!ATTLIST book key ID #REQUIRED >
+
+<!ELEMENT phdthesis (%C;,school,year,month,url,note)>
+<!ATTLIST phdthesis key ID #REQUIRED >
+
+<!ELEMENT journal (#PCDATA)>
+
+<!ELEMENT volume (#PCDATA)>
+
+<!ELEMENT number (#PCDATA)>
+
+<!ELEMENT pages EMPTY>
+<!ATTLIST pages
+  first CDATA #REQUIRED
+  last CDATA #REQUIRED>
+
+<!ELEMENT booktitle (short,long)>
+
+<!ELEMENT address (#PCDATA)>
+
+<!ELEMENT publisher (#PCDATA)>
+
+<!ELEMENT school (#PCDATA)>
+
+<!ELEMENT url EMPTY>
+<!ATTLIST url
+  ftype NMTOKEN #REQUIRED 
+  href CDATA #REQUIRED>
+
+<!ELEMENT short (#PCDATA)>
+
+<!ELEMENT long (#PCDATA)>
+
+<!ELEMENT key (#PCDATA)>
+
+<!ELEMENT author (name)+>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT year (#PCDATA)>
+
+<!ELEMENT month (#PCDATA)>
+<!ATTLIST month
+  mtype NMTOKEN #REQUIRED>
+
+<!ELEMENT note (#PCDATA)>

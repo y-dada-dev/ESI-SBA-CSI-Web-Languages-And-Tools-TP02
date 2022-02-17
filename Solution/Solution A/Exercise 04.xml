@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Entreprise  SYSTEM "./Répertoire_TD02_EXO04.dtd">
+<Entreprise>
+    <Personne ID="PE01">
+        <Nom>Omar</Nom>
+        <Info_Personnels>Hidden</Info_Personnels>
+        <Project_Participé ID="P01"></Project_Participé>
+    </Personne>
+    <Personne ID="PE02">
+        <Nom>Zohra</Nom>
+        <Info_Personnels>Hidden</Info_Personnels>
+        <Project_Participé ID="P01 P02"></Project_Participé>
+    </Personne>
+    <Personne ID="PE03">
+        <Nom>Mohammed</Nom>
+        <Info_Personnels>Hidden</Info_Personnels>
+        <Project_Participé ID="P02"></Project_Participé>
+    </Personne>
+    <Project ID="P01">
+        <Nom_P>Projet de traduction</Nom_P>
+        <Descriptif>Projet de traduction qui consiste à traduire certains éléments de la documentation de l'entreprise.</Descriptif>
+        <Personne_P ID="PE01 PE02"></Personne_P>
+    </Project>
+    <Project ID="P02">
+        <Nom_P>Projet de construction</Nom_P>
+        <Descriptif>Projet de construction de corpus qui consiste à rassembler et à structurer toute la documentation de l'entreprise.</Descriptif>
+        <Personne_P ID="PE02 PE03"></Personne_P>
+    </Project>
+</Entreprise>

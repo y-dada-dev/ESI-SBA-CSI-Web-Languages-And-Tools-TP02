@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Répertoire SYSTEM "./Répertoire_TD02_EXO02.dtd">
+<Répertoire>
+    <catégorie nom="zbp_sf4_ssb">
+        <contact nom="desvignes" prénom="nicole">
+            <bureau téléphone="0234542312" adresse="2 rue de l'espoir "/>
+            <maison téléphone="0870754566" adresse="2 rue de l'espoir "/>
+        </contact>
+        <contact nom="fonteau" prénom="jérémie">
+            <bureau téléphone="0465345622" adresse="54 bd de la liberté "/>
+            <maison téléphone="0445879044" adresse="6bis avenue Jean Charcot "/>
+        </contact>
+    </catégorie>
+    <catégorie nom="jnc_dg4_ssb">
+        <contact nom="martin" prénom="paul">
+            <bureau téléphone="0245664442" adresse="5 rue de l'épine " courriel="paul.martin@gmail.com"/>
+        </contact>
+        <contact nom="batiset" prénom="raymond">
+            <bureau téléphone="XXX" adresse="XXX"/>
+            <maison téléphone="0248666445" adresse="5 rue de l'épine " courriel="rbatisset@free.fr"/>
+        </contact>
+        <contact nom="nrz_qg4_ssb" prénom="paul">
+            <bureau téléphone="0245678966" adresse="34 chemin de la fraise "/>
+            <maison téléphone="0256780032" adresse="11 rue du petit plaisir "/>
+        </contact>
+    </catégorie>
+</Répertoire>

@@ -1,0 +1,12 @@
+
+
+<!ELEMENT annuaire (pays)+>
+<!ELEMENT pays (capitale,nbr_population)>
+<!ATTLIST pays
+  nom ID #REQUIRED>
+
+<!ELEMENT capitale (#PCDATA)>
+
+<!ELEMENT nbr_population (#PCDATA)>
+<!ATTLIST nbr_population
+  en NMTOKEN #REQUIRED>

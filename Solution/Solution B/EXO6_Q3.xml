@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE entreprise [
+<!ELEMENT entreprise ( projet*,  personne*)>
+<!ELEMENT projet (nom, infos)>
+<!ATTLIST projet id_projet ID #REQUIRED  membre IDREFS #REQUIRED >
+<!ELEMENT personne (nom,  infos)>
+<!ATTLIST personne id_pers ID #REQUIRED   participe  IDREFS #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT infos (#PCDATA) >
+]>
+<entreprise>
+    <projet id_projet="p1" membre="pers_01 pers_03">
+        <nom>Traduction</nom>
+        <infos>description du projet Traduction</infos>
+        
+    </projet>
+    <projet id_projet="p2" membre="pers_02 pers_03">
+        <nom>Corpus</nom>
+        <infos>description du projet Corpus</infos>
+       
+    </projet>
+    <personne id_pers="pers_01" participe="p1">
+        <nom>Omar</nom>
+        <infos>informations sur Omar</infos>
+       
+    </personne>
+    <personne id_pers="pers_02" participe="p2">
+        <nom>Mohamed</nom>
+        <infos>informations sur Mohamed</infos>
+       
+    </personne>
+    <personne id_pers="pers_03" participe="p1 p2">
+        <nom>Samir</nom>
+        <infos>informations sur Samir</infos>
+        
+    </personne>
+</entreprise>

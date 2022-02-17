@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Bibliographie (Livres*, Articles*, Personne*)>
+<!ELEMENT Livres (Info_Edition, Info_Livre, Avis_L?)>
+<!ATTLIST Livres ID ID #REQUIRED>
+<!ELEMENT Info_Edition (Nom_Editeur*, Lieu_Edition, Lieu_Imprition)>
+<!ATTLIST Info_Edition Num_Ed ID #REQUIRED>
+<!ATTLIST Nom_Editeur ID IDREF #IMPLIED>
+<!ELEMENT Nom_Editeur EMPTY>
+<!ELEMENT Lieu_Edition (#PCDATA)>
+<!ELEMENT Lieu_Imprition (#PCDATA)>
+<!ELEMENT Info_Livre (Nom_L+, Auteur_L+, Tome*)>
+<!ELEMENT Tome (Nombre_Pages_L)>
+<!ATTLIST Info_Livre ISBN ID #REQUIRED>
+<!ELEMENT Nom_L (#PCDATA)>
+<!ATTLIST Auteur_L ID IDREF #IMPLIED>
+<!ELEMENT Auteur_L EMPTY>
+<!ATTLIST Tome Num_Tome ID #REQUIRED>
+<!ELEMENT Nombre_Pages_L (#PCDATA)>
+<!ELEMENT Avis_L (#PCDATA)>
+<!ATTLIST Avis_L ID IDREF #IMPLIED>
+
+
+
+<!ELEMENT Articles (Info_Article, Info_Publication, Avis_A?)>
+<!ATTLIST Articles ID ID #REQUIRED>
+<!ELEMENT Info_Article (Titre, Auteur_A*)>
+<!ELEMENT Titre (#PCDATA)>
+<!ELEMENT Auteur_A EMPTY>
+<!ATTLIST Auteur_A ID IDREF #IMPLIED>
+<!ELEMENT Info_Publication (Journal)>
+<!ELEMENT Journal (Nom_J+, Nombre_Pages_A, Annee_Publication)>
+<!ELEMENT Nom_J (#PCDATA)>
+<!ELEMENT Nombre_Pages_A (#PCDATA)>
+<!ELEMENT Annee_Publication (#PCDATA)>
+<!ATTLIST Journal ID ID #REQUIRED>
+<!ELEMENT Avis_A (#PCDATA)>
+<!ATTLIST Avis_A ID IDREF #IMPLIED>
+
+
+
+<!ELEMENT Personne (Nom, Prénom)>
+<!ATTLIST Personne ID ID #REQUIRED>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Prénom (#PCDATA)>

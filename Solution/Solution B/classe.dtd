@@ -1,0 +1,49 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT classes (classe)>
+
+<!ELEMENT classe (eleve)+>
+<!ATTLIST classe
+  nom ID #REQUIRED>
+
+<!ELEMENT eleve (information_personnelle,resultats)>
+<!ATTLIST eleve
+  ident ID #REQUIRED>
+
+<!ELEMENT information_personnelle (nom,adresse,date_naiss)>
+
+<!ELEMENT resultats (trimestre)+>
+
+<!ELEMENT nom (prenom,nom_F)>
+
+<!ELEMENT adresse (numero,voie,code,ville)>
+
+<!ELEMENT date_naiss (annee,mois,jour)>
+
+<!ELEMENT trimestre (module)+>
+<!ATTLIST trimestre
+  num CDATA #REQUIRED>
+
+<!ELEMENT prenom (#PCDATA)>
+
+<!ELEMENT nom_F (#PCDATA)>
+
+<!ELEMENT numero (#PCDATA)>
+
+<!ELEMENT voie (#PCDATA)>
+<!ATTLIST voie
+  cat (avenue|allée|rue) #REQUIRED>
+
+<!ELEMENT code (#PCDATA)>
+
+<!ELEMENT ville (#PCDATA)>
+
+<!ELEMENT annee (#PCDATA)>
+
+<!ELEMENT mois (#PCDATA)>
+
+<!ELEMENT jour (#PCDATA)>
+
+<!ELEMENT module (#PCDATA)>
+<!ATTLIST module
+  nom CDATA #REQUIRED>

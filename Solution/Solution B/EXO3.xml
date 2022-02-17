@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE anthologie  [
+
+<!ELEMENT anthologie (chanson+)>
+<!ELEMENT chanson	( titre?, ( (vers+) | (refrain?,(couplet,refrain)+)))>
+<!ELEMENT titre	(#PCDATA) >
+<!ELEMENT couplet	(vers+)	>
+<!ELEMENT refrain	(vers+)	>
+<!ELEMENT vers	(#PCDATA) >
+]>
+<anthologie>
+    <chanson>
+        <titre> La Javanaise </titre>
+        <refrain>
+            <vers> Ne vous d´eplaise ... </vers>
+        </refrain>
+        <couplet>
+            <vers>J’avoue...</vers>
+        </couplet>
+        <refrain>
+            <vers> De vous a moi... </vers>
+        </refrain>
+    </chanson>
+    <chanson>
+        <vers> Tralala </vers>
+        <vers> Lal`ere </vers>
+    </chanson>
+</anthologie>

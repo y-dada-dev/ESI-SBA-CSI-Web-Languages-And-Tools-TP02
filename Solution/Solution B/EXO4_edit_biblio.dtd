@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!ELEMENT biblio (livre|article)+>
+	<!ELEMENT livre (titre, auteur+, tome*, edition, avis?)>
+	<!ATTLIST livre isbn ID #REQUIRED >
+		
+		<!ELEMENT titre (#PCDATA)>
+		<!ATTLIST titre soustitre CDATA #IMPLIED>
+		<!ELEMENT auteur (#PCDATA)>
+		<!ELEMENT tome EMPTY>
+			<!ATTLIST tome
+				 nb_pages CDATA #REQUIRED
+				 soustitre CDATA #IMPLIED
+			>
+		<!ELEMENT edition (editeur, lieu_edition, lieu_impression)>
+			<!ELEMENT editeur (#PCDATA)>
+			<!ELEMENT lieu_edition (#PCDATA)>
+			<!ELEMENT lieu_impression (#PCDATA)>
+		<!ELEMENT avis (#PCDATA)>
+	<!ELEMENT article (titre, auteur+, journal,avis?)>
+		<!ELEMENT journal (page,annee)>
+			<!ATTLIST journal
+				nom_journal CDATA "Les Services Web"
+				ISSN CDATA #REQUIRED >
+			<!ELEMENT page (#PCDATA)>
+			<!ELEMENT annee (#PCDATA)>

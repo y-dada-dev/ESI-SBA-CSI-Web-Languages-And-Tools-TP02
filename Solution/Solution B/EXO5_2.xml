@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gene [
+<!ELEMENT gene (personne*)>
+<!ELEMENT personne (nom,parents?)>
+<!ATTLIST personne id ID #IMPLIED
+genre (H|F)  #REQUIRED>
+<!ELEMENT parents EMPTY>
+<!ATTLIST parents refp IDREF #REQUIRED
+                  refm IDREF #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+]>
+
+<gene>
+    <personne id="b" genre="H">
+        <nom>ali</nom>
+        <parents refp="h" refm="h" />
+    </personne>
+    <personne id="m" genre="F">
+        <nom>amina</nom>
+    </personne>
+    <personne id="h" genre="H">
+        <nom>mohamed</nom>
+        <parents refp="j" refm="f" />
+    </personne>
+    <personne id="j" genre="H">
+        <nom>asma</nom>
+    </personne>
+    <personne id="f" genre="F">
+        <nom>sofian</nom>
+    </personne>
+</gene>

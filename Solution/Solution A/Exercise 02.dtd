@@ -1,0 +1,13 @@
+<!ELEMENT Répertoire (catégorie*)>
+<!ELEMENT catégorie  (contact*) >
+<!ATTLIST catégorie nom ID #REQUIRED>
+<!ELEMENT contact (bureau, maison?) >
+<!ATTLIST contact nom ID #REQUIRED prénom CDATA #REQUIRED >   
+<!ELEMENT bureau EMPTY >
+<!ATTLIST bureau 
+téléphone CDATA #REQUIRED adresse CDATA #REQUIRED 
+courriel CDATA #IMPLIED>   
+<!ELEMENT maison EMPTY >
+<!ATTLIST maison
+téléphone CDATA #REQUIRED adresse CDATA #REQUIRED
+courriel CDATA #IMPLIED>

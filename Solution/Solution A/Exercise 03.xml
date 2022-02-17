@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Bibliographie  SYSTEM "./Répertoire_TD02_EXO03.dtd">
+<Bibliographie>
+    <Livres ID="L01">
+        <Info_Edition Num_Ed="NE01">
+            <Nom_Editeur ID="P01"/>
+            <Lieu_Edition></Lieu_Edition>
+            <Lieu_Imprition></Lieu_Imprition>
+        </Info_Edition>
+        <Info_Livre ISBN="ISBN0000">
+            <Nom_L></Nom_L>
+            <Auteur_L ID="P01"/>
+            <Tome Num_Tome="T01">
+                <Nombre_Pages_L></Nombre_Pages_L>
+            </Tome>
+        </Info_Livre>
+        <Avis_L ID="P01"></Avis_L>
+    </Livres>
+    <Articles ID="A01">
+        <Info_Article>
+            <Titre></Titre>
+            <Auteur_A ID="P01"/>
+        </Info_Article>
+        <Info_Publication>
+            <Journal ID="J01">
+                <Nom_J></Nom_J>
+                <Nombre_Pages_A></Nombre_Pages_A>
+                <Annee_Publication></Annee_Publication>
+            </Journal>
+        </Info_Publication>
+        <Avis_A ID="P01"></Avis_A>
+    </Articles>
+    <Personne ID="P01">
+        <Nom></Nom>
+        <Prénom></Prénom>
+    </Personne>
+</Bibliographie>
+    
